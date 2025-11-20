@@ -1,0 +1,18 @@
+Step 1: Create Docker network
+Learned how to make a custom Docker network so containers can talk to each other by name.
+Step 2: Run MySQL container
+Learned to run MySQL in a container with environment variables and a volume for data persistence.
+Used --network-alias mysql so the app container can find it.
+Step 3: Verify MySQL
+Entered the MySQL container with docker exec and checked databases.
+Learned to use SHOW DATABASES; to confirm the todos database exists.
+Step 4: Run Node.js app container
+Learned how to run the app container on the same network as MySQL.
+Passed database connection info with environment variables.
+App started successfully and connected to the database.
+Step 5: Test the app in browser
+Learned to map container ports to host ports and open the app in a browser.
+Verified the app is working and can save data to MySQL.
+Step 6: Docker Compose (optional/future)
+Learned that Docker Compose can start both app and DB containers together.
+Makes networking, startup order, and volumes easier to manage.
